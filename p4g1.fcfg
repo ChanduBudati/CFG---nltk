@@ -1,0 +1,75 @@
+% start S
+# ###################
+# Grammar Productions
+# ###################
+S[-INV] -> NP[NUM=?n] VP[NUM=?n]
+S[-INV]/?x -> NP[NUM=?n] VP[NUM=?n]/?x
+S[-INV] -> NP[NUM=?n] S/NP[NUM=?n]
+S[-INV] -> Adv[+NEG] S[+INV]
+S[+INV] -> WH V[+AUX] SI
+S[+INV] -> WH V[+AUX] SI Comp SI
+S[+INV] -> V[+AUX] NP[NUM=?n] VP
+S[+INV]/?x -> V[+AUX] NP[NUM=?n] VP[NUM=?n]/?x
+SBar -> Comp S[-INV]
+SBar/?x -> Comp S[-INV]/?x
+
+SI -> NP[NUM=?n] VP[NUM=?n1]
+SI -> NP V[SUBCAT=trans, -AUX] NG
+
+NP[NUM=?n] -> N[NUM=?n]
+NP[NUM=?n] -> ADJV N[NUM=?n]
+NP[NUM=?n] -> PropN[NUM=?n]
+NP[NUM=?n] -> Det[NUM=?n] N[NUM=?n]
+NP[NUM=pl] -> N[NUM=pl]
+
+
+VP[TENSE=?t, NUM=?n] -> V[SUBCAT=intrans, TENSE=?t, NUM=?n, -AUX]
+VP[TENSE=?t, NUM=?n] -> V[TENSE=?t, NUM=?n, -AUX] ADJV
+VP[TENSE=?t, NUM=?n] -> V[TENSE=?t, NUM=?n, -AUX] PP
+VP[TENSE=?t, NUM=?n] -> V[TENSE=?t, NUM=?n, -AUX] NP PP NP
+VP[TENSE=?t, NUM=?n] -> V[TENSE=?t, NUM=?n] PP NP
+#VP[TENSE=?t, NUM=?n] -> VP[TENSE=?t, NUM=?n] PP NP
+VP[TENSE=?t, NUM=?n] -> V[SUBCAT=trans, TENSE=?t, NUM=?n, -AUX] NP
+VP[TENSE=?t, NUM=?n] -> V[SUBCAT=trans, TENSE=?t, -AUX] WH VP[NUM=?n]
+VP[TENSE=?t, NUM=?n] -> V[SUBCAT=trans, TENSE=?t, NUM=?n, -AUX] NP ADJV
+VP[TENSE=?t, NUM=?n]/?x -> V[SUBCAT=trans, TENSE=?t, NUM=?n, -AUX] NP/?x
+VP[TENSE=?t, NUM=?n] -> V[SUBCAT=clause, TENSE=?t, NUM=?n, -AUX] SBar
+VP[TENSE=?t, NUM=?n]/?x -> V[SUBCAT=clause, TENSE=?t, NUM=?n, -AUX] SBar/?x
+VP[TENSE=?t, NUM=?n] -> V[+AUX, TENSE=?t, NUM=?n] VP
+VP[TENSE=?t, NUM=?n]/?x -> V[+AUX, TENSE=?t, NUM=?n] VP/?x
+
+# ###################
+# Lexical Productions
+# ###################
+
+Det[NUM=sg] -> 'this' | 'every'
+Det[NUM=pl] -> 'these' | 'all'
+Det -> 'the' | 'some' | 'several'
+
+PropN[NUM=sg]-> 'Mary' | 'Jody' |'John' | 'I'
+
+N[NUM=sg] -> 'Tuesday' | 'summit' | 'corn' | 'farmer' | 'tractor' | 'boy' | 'you' | 'dog' | 'girl' | 'car' | 'child' | 'answer' | 'book' | 'chair' | 'counter' | 'candy'
+N[NUM=pl] -> 'dogs' | 'minutes' | 'girls' | 'cars' | 'children' | 'answers' | 'chairs'
+
+V[SUBCAT=intrans, TENSE=pres, NUM=sg, -AUX] -> 'disappears' | 'walks' | 'jumps' | 'sings' | 'know'
+V[SUBCAT=intrans, TENSE=pres, NUM=pl, -AUX] -> 'disappear' | 'walk'
+V[SUBCAT=intrans, TENSE=past, -AUX] -> 'disappeared' | 'walked'
+
+V[SUBCAT=trans, TENSE=pres, NUM=pl, -AUX] -> 'wonder' | 'pick' | 'see' | 'like' | 'know' | 'are' | 'put'
+V[SUBCAT=trans, TENSE=past, NUM=sg, -AUX] ->  'reached' | 'seen' | 'loaded' | 'filled'
+V[SUBCAT=trans, TENSE=pres, NUM=sg, -AUX] -> 'does' | 'picks' | 'sees' | 'likes' | 'knows' | 'are' | 'puts'
+V[SUBCAT=clause, TENSE=pres, NUM=sg, -AUX] -> 'claims'
+V[SUBCAT=clause, TENSE=past, NUM=sg, -AUX] -> 'thought' | 'does'
+V[SUBCAT=trans, TENSE=past, -AUX] -> 'saw' | 'liked' | 'was'| 'put'
+
+V[TENSE=pres, NUM=pl, +AUX] -> 'does' | 'can' | 'are'
+V[TENSE=pres, NUM=sg, +AUX] -> 'do' | 'is' | 'can' | 'have' | 'what'
+V[TENSE=past, +AUX] -> 'did' | 'could'
+
+
+ADJV -> 'hungry' | 'five'
+PP -> 'on' | 'there' | 'with' | 'into' | 'for'
+WH -> 'what' | 'who'
+Adv[+NEG] -> 'rarely' | 'never'
+NG -> 'not'
+Comp -> 'that' | 'for'

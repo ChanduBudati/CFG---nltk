@@ -1,0 +1,28 @@
+(S[-INV]  (NP[NUM='pl'] (Det[NUM='pl'] these) (N[NUM='pl'] dogs))  (VP[NUM='pl', TENSE='pres']    (V[-AUX, NUM='pl', SUBCAT='trans', TENSE='pres'] are)    (ADJV[] hungry)))
+
+(S[-INV]  (NP[NUM='sg'] (PropN[NUM='sg'] John))  (VP[NUM='sg', TENSE='pres']    (V[-AUX, NUM='sg', SUBCAT='trans', TENSE='pres'] knows)    (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] answer))))
+
+(S[-INV]  (NP[NUM='sg'] (PropN[NUM='sg'] Mary))  (VP[NUM='sg', TENSE='pres']    (V[-AUX, NUM='sg', SUBCAT='clause', TENSE='pres'] claims)    (SBar[]      (Comp[] that)      (S[-INV]        (NP[NUM='sg'] (PropN[NUM='sg'] John))        (VP[NUM='sg', TENSE='pres']          (V[-AUX, NUM='sg', SUBCAT='trans', TENSE='pres'] knows)          (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] answer)))))))
+
+(S[-INV]  (NP[NUM='sg'] (PropN[NUM='sg'] John))  (VP[NUM='sg', TENSE='past']    (V[-AUX, NUM='sg', SUBCAT='clause', TENSE='past'] thought)    (SBar[]      (Comp[] that)      (S[-INV]        (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] chair))        (VP[NUM=?n, TENSE='past']          (V[-AUX, SUBCAT='trans', TENSE='past'] was)          (PP[] there))))))
+
+(S[-INV]  (NP[NUM='sg'] (PropN[NUM='sg'] John))  (VP[NUM=?n, TENSE='past']    (V[-AUX, SUBCAT='trans', TENSE='past'] put)    (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] candy))    (PP[] on)    (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] counter))))
+
+(S[+INV]  (V[+AUX, NUM='sg', TENSE='pres'] do)  (N[NUM='sg'] you)  (VP[NUM='pl', TENSE='pres']    (V[-AUX, NUM='pl', SUBCAT='trans', TENSE='pres'] like)    (NP[NUM='pl'] (N[NUM='pl'] dogs))))
+
+(S[-INV]  (Adv[+NEG] never)  (S[+INV]    (V[+AUX, NUM='sg', TENSE='pres'] have)    (NP[NUM='sg'] (PropN[NUM='sg'] I))    (VP[NUM='sg', TENSE='past']      (V[-AUX, NUM='sg', SUBCAT='trans', TENSE='past'] seen)      (NP[NUM='sg'] (Det[NUM='sg'] this) (N[NUM='sg'] chair)))))
+
+(S[-INV]  (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] boy))  (VP[NUM='sg', TENSE='pres']    (V[-AUX, NUM='sg', SUBCAT='intrans', TENSE='pres'] jumps)))
+
+(S[+INV]  (WH[] what)  (V[+AUX, NUM='pl', TENSE='pres'] does)  (SI[]    (NP[NUM='sg'] (PropN[NUM='sg'] John))    (VP[NUM='sg', TENSE='pres']      (V[-AUX, NUM='sg', SUBCAT='intrans', TENSE='pres'] know))))
+(S[+INV]  (WH[] what)  (V[+AUX, NUM='pl', TENSE='pres'] does)  (SI[]    (NP[NUM='sg'] (PropN[NUM='sg'] John))    (VP[NUM='sg', TENSE='pres']      (V[-AUX, NUM='sg', SUBCAT='intrans', TENSE='pres'] know)))  (Comp[] that)  (SI[]    (NP[NUM='sg'] (PropN[NUM='sg'] Mary))    (V[-AUX, NUM='sg', SUBCAT='trans', TENSE='pres'] does)    (NG[] not)))
+(S[-INV]  (NP[NUM='sg'] (PropN[NUM='sg'] I))  (VP[NUM='sg', TENSE='pres']    (V[-AUX, NUM='pl', SUBCAT='trans', TENSE='pres'] wonder)    (WH[] who)    (V[-AUX, NUM='sg', SUBCAT='trans', TENSE='pres'] likes)    (N[NUM='sg'] candy)))
+
+(S[-INV]  (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] farmer))  (VP[NUM='sg', TENSE='past']    (V[-AUX, NUM='sg', SUBCAT='trans', TENSE='past'] loaded)    (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] tractor))    (PP[] with)    (N[NUM='sg'] corn)))
+
+(S[-INV]  (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] farmer))  (VP[NUM='sg', TENSE='past']    (V[-AUX, NUM='sg', SUBCAT='trans', TENSE='past'] filled)    (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] tractor))    (PP[] with)    (N[NUM='sg'] corn)))
+
+(S[-INV]  (NP[NUM='sg'] (PropN[NUM='sg'] John))  (VP[NUM='sg', TENSE='past']    (V[-AUX, NUM='sg', SUBCAT='trans', TENSE='past'] reached)    (NP[NUM='sg'] (Det[] the) (N[NUM='sg'] summit))    (PP[] on)    (NP[NUM='sg'] (PropN[NUM='sg'] Tuesday))))
+
+(S[-INV]  (NP[NUM='sg'] (PropN[NUM='sg'] John))  (VP[NUM='sg', TENSE='past']    (V[+ADJ, -AUX, NUM='sg', SUBCAT='trans', TENSE='past'] walked)    (PP[] on)    (NP[NUM='sg'] (PropN[NUM='sg'] Tuesday))))
+(S[-INV]  (NP[NUM='sg'] (PropN[NUM='sg'] Mary))  (VP[NUM='sg', TENSE='past']    (V[+ADJ, -AUX, NUM='sg', SUBCAT='trans', TENSE='past'] walked)    (PP[] for)    (ADJV[] five)    (N[NUM='pl'] minutes)))
