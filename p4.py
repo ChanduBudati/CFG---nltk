@@ -1,7 +1,5 @@
 '''
 Chandu Budati
-CSCI 6350-001
-Project #4
 Due: 03/23/2018
 File Description: This file contians all functions required to run Grammar checker program, actual grammar is in file p4grammar.fcfg
 '''
